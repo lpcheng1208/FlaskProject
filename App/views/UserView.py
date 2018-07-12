@@ -7,7 +7,7 @@ from App.ext import cache
 blue = Blueprint("blue", __name__)
 
 
-@blue.route("/users/", methods=["GET", "POST", "PUT", "DELETE"])
+@blue.route("/user/", methods=["GET", "POST", "PUT", "DELETE"])
 def users():
     if request.method == "GET":
         return render_template("UserRegister.html")

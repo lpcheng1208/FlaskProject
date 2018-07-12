@@ -29,7 +29,7 @@ class DevelopConfig(Config):
         "PASSWORD": "Lpcheng1208-",
         "HOST": "localhost",
         "PORT": "3306",
-        "NAME": "flaskproject",
+        "NAME": "RestApi",
         "DB": "mysql",
         "DRIVER": "pymysql",
 
@@ -41,7 +41,7 @@ class DevelopConfig(Config):
 
 
 class TestingConfig(Config):
-    DEBUG = True
+    TESTING = True
 
     DATABASE = {
         "USER": "stu",
@@ -58,7 +58,6 @@ class TestingConfig(Config):
 
 
 class StatingConfig(Config):
-    DEBUG = True
 
     DATABASE = {
         "USER": "stu",
@@ -75,7 +74,6 @@ class StatingConfig(Config):
 
 
 class ProductConfig(Config):
-    DEBUG = True
 
     DATABASE = {
         "USER": "stu",
